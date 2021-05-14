@@ -1,16 +1,7 @@
 {
    "extends": [
-      "plugin:react/recommended",
-      "prettier",
-      "prettier/react",
-      "prettier/standard"
+     "standard"
    ],
-   "plugins": [
-      "react",
-      "prettier",
-      "standard"
-   ],
-   "parser": "babel-eslint",
    "parserOptions": {
       "sourceType": "module",
       "ecmaFeatures": {
@@ -41,44 +32,53 @@
       "TEST_PROJECT_DATA_API_PATH_V2": false
    },
    "rules": {
-      "prettier/prettier": "error",
-      "no-use-before-define": [
-         "error",
-         {
-            "functions": true,
-            "classes": true
-         }
-      ],
-      "react/display-name": 0,
-      "react/no-unused-prop-types": 0,
-      "react/jsx-key": 0,
-      "react/no-unescaped-entities": 0,
-      "eqeqeq": 2,
-      "curly": 0,
-      "react/prop-types": 0,
-      "no-sequences": 0,
-      "jsx-quotes": 0,
-      "no-proto": 0,
-      "no-throw-literal": 0,
-      "no-useless-escape": 0,
-      "no-unused-vars": "error",
-      "key-spacing": 0,
-      "no-underscore-dangle": 0,
-      "no-unused-expressions": 0,
-      "no-shadow": 0,
-      "no-shadow-restricted-names": 0,
-      "no-extend-native": 0,
-      "no-var": 2,
-      "new-cap": 0,
-      "semi-spacing": 0,
-      "space-unary-ops": 0,
-      "space-infix-ops": 0,
-      "consistent-return": 0,
-      "strict": 0,
-      "camelcase": 0,
-      "arrow-parens": [
-         "error",
-         "always"
-      ]
+     "curly": 0,
+     "comma-dangle": [
+       2,
+       "never"
+     ],
+     "comma-spacing": [
+       "error",
+       {
+         "before": false,
+         "after": true
+       }
+     ],
+     "no-sequences": 0,
+     "camelcase": 0,
+     "no-proto": 0,
+     "no-throw-literal": 0,
+     "no-useless-escape": 0,
+     "eqeqeq": [
+       2,
+       "allow-null"
+     ],
+     "key-spacing": 0,
+     "no-underscore-dangle": 0,
+     "no-unused-expressions": 0,
+     "space-before-function-paren": 2,
+     "no-shadow": 0,
+     "no-shadow-restricted-names": 0,
+     "no-use-before-define": [
+       "error",
+       {
+         "functions": true,
+         "classes": true
+       }
+     ],
+     "no-extend-native": 0,
+     "no-var": 2,
+     "new-cap": 0,
+     "quotes": 2,
+     "semi-spacing": 0,
+     "space-unary-ops": 0,
+     "space-infix-ops": 0,
+     "consistent-return": 0,
+     "object-curly-spacing": [
+       "error",
+       "always"
+     ],
+     "strict": 0
    }
-}
+ }
+ 
